@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "c4223ba7-438b-454d-8fe5-3b730d2cec1f",
+		"name": "TEST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23838908",
+		"_collection_link": "https://codeinverse-admin.postman.co/workspace/Schoolous-~7d6495a3-dfac-4fdf-b056-f022320b89a7/collection/23838908-c4223ba7-438b-454d-8fe5-3b730d2cec1f?action=share&source=collection_link&creator=23838908"
+	},
+	"item": [
+		{
+			"name": "ADD MOVIE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"moviename\": \"Hacker\",\r\n    \"rating\": 5,\r\n    \"releasedate\":\"15-september-1995\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/admin/addmovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"admin",
+						"addmovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FETCH MOVIELIST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3300/admin/movielist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"admin",
+						"movielist"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
